@@ -3,7 +3,9 @@
     <h1>Carrito</h1>
     <div class="row">
       {{ products }}
-      <Card />
+      <Card 
+        v-for="product of products" :key="product.id" 
+      />
     </div>
   </div>
 </template>
