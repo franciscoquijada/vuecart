@@ -2,6 +2,7 @@
   <div class="container">
     <h1>Carrito</h1>
     <div class="row">
+      {{ cart }}
       <Card 
         v-for="product of products" :key="product.id"
         :product="product" 
@@ -27,8 +28,9 @@ export default {
     });
 
     const products = computed(() => store.state.products)
+    const cart = computed(() => store.state.cart)
 
-    return {products}
+    return {products, cart}
   },
 };
 </script>
