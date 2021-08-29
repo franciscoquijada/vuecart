@@ -7,8 +7,9 @@ export default createStore({
   //Para modificar el state
   //Las mutaciones se llaman a travez de commit
   mutations: {
-    setProducts({state, payload}){
+    setProducts(state, payload){
       state.products = payload
+      console.log(payload)
     }
   },
   actions: {
