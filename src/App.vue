@@ -4,7 +4,8 @@
     <div class="row">
       {{ products }}
       <Card 
-        v-for="product of products" :key="product.id" 
+        v-for="product of products" :key="product.id"
+        :product="product" 
       />
     </div>
   </div>
