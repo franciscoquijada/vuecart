@@ -1,5 +1,7 @@
 # vuecart
 
+Practice with vue js making a simple shopping cart
+
 ## Project setup
 ```
 npm install
